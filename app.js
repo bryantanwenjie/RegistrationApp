@@ -10,10 +10,15 @@ const app = express();
 
 // Database connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'C237_usersdb'
+    //host: 'localhost',
+    //user: 'root',
+    //password: '',
+    //database: 'C237_usersdb'
+    host: 'c237-all.mysql.database.azure.com',
+    port: 3306,
+    user: 'c237admin',
+    password: 'c2372025!',
+    database: 'c237_24001655'
 });
 
 db.connect((err) => {
